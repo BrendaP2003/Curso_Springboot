@@ -19,14 +19,14 @@ public class Usuariomodel {
 
     }
 
-    public Usuariomodel(String password, String rol, String nombreUser, String email) {
 
-        Password = password;
-        Rol = rol;
-        NombreUser = nombreUser;
-        Email = email;
+
+    public Usuariomodel(String nombre, String email,String rol, String password) {
+        this.NombreUser = nombre;
+        this.Email = email;
+        this.Rol = rol;
+        this.Password= password;
     }
-
 
 
     public Long getID() {

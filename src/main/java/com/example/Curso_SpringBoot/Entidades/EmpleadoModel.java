@@ -12,16 +12,17 @@ public class EmpleadoModel {
     private Long Id;
     private String Nombre;
     private  String Puesto;
-    private BigDecimal Salariko;
+    private BigDecimal Salario;
 
     public  EmpleadoModel (){
 
     }
-    public EmpleadoModel(Long id, BigDecimal salariko, String puesto, String nombre) {
-        Id = id;
-        Salariko = salariko;
-        Puesto = puesto;
-        Nombre = nombre;
+
+    public EmpleadoModel(String nombre, String puesto, BigDecimal salario) {
+        this.Nombre = nombre;
+        this.Puesto = puesto;
+        this.Salario = salario;
+
     }
 
     public Long getId() {
@@ -32,12 +33,12 @@ public class EmpleadoModel {
         Id = id;
     }
 
-    public BigDecimal getSalariko() {
-        return Salariko;
+    public BigDecimal getSalario() {
+        return Salario;
     }
 
-    public void setSalariko(BigDecimal salariko) {
-        Salariko = salariko;
+    public void setSalario(BigDecimal salario) {
+        Salario = salario;
     }
 
     public String getPuesto() {
